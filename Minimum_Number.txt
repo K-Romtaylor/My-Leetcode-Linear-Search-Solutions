@@ -1,1 +1,14 @@
-https://hello.com
+public class findMinNumber {
+    public static void main(String[] args) {
+        int arr[] = {5,5,12,8,99,123,2};
+        int minNumber = getMinNumber(arr);
+        System.out.println(minNumber);
+    }
+    static int getMinNumber(int arr[]){
+        int min = arr[0];
+        for(int num : arr){
+            if(num<min) min=num;
+        }
+        return min;
+    }
+}
